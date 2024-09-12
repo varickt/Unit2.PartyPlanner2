@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .party-list {
+      list-style: none;
+      padding: 0;
+    }
+    .party-item {
+      margin-bottom: 1em;
+      padding: 1em;
+      border: 1px solid #ccc;
+    }
+    .delete-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+    form {
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upcoming Parties</h1>
+
+  <ul class="party-list" id="partyList"></ul>
+
+  <h2>Schedule a New Party</h2>
+  <form id="partyForm">
+    <input type="text" id="partyName" placeholder="Party Name" required /><br />
+    <input type="date" id="partyDate" required /><br />
+    <input type="text" id="partyLocation" placeholder="Location" required /><br />
+    <textarea id="partyDescription" placeholder="Description" required></textarea><br />
+    <button type="submit">Add Party</button>
+  </form>
+
+  <script src="vt.js"></script>
+</body>
+</html>
